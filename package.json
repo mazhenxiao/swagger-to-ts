@@ -1,14 +1,15 @@
 {
-  "name": "swagger-to-ts",
-  "version": "1.0.1",
+  "name": "isoftstone-swagger-to-ts",
+  "version": "1.0.0",
   "description": "通过 swagger导出 基于 axios 的ts 请求及 ts 类型",
   "type": "module",
-  "main": "schema.js",
+  "main": "schema.mjs",
   "scripts": {
-    "schema": "node schema.js"
+    "schema": "node schema.mjs",
+    "commit": "git add . && git-cz && git push"
   },
   "bin": {
-    "schema": "schema.js"
+    "schema": "schema.mjs"
   },
   "author": "mazhenxiao",
   "license": "ISC",
@@ -16,11 +17,14 @@
     "type": "git",
     "url": "https://github.com/mazhenxiao/swagger-to-ts"
   },
-  "devDependencies": {
-    "rc": "^1.2.8"
-  },
   "engines": {
     "node": ">=20.10.0",
     "npm": ">=10.2.5"
+  },
+  "dependencies": {
+    "rc": "^1.2.8"
+  },
+  "devDependencies": {
+    "czg": "^1.11.0"
   }
 }

@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+czg@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/czg/-/czg-1.11.0.tgz#5beb802ba390aabf31bc6f158f9c5724abd272f2"
+  integrity sha512-go39avnHPvDn1HF4LS1qxj5XPGCQexZ9+y8f+0VlE9plZgRyWUOl4rUCwE4vD1azouIhz/KaauB45A7jPfMxpw==
+
 deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.npmmirror.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
@@ -19,7 +24,7 @@ minimist@^1.2.0:
 
 rc@^1.2.8:
   version "1.2.8"
-  resolved "https://registry.npmmirror.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
+  resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
   integrity sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
   dependencies:
     deep-extend "^0.6.0"

@@ -5,11 +5,11 @@
 #### 安装
 
 ```
-npm install swagger-to-ts     // 或者
-yarn add swagger-to-ts
+npm install isoftstone-swagger-to-ts    // 或者
+yarn add isoftstone-swagger-to-ts
 ```
 
-### 配置 .swagger-to-ts
+### 配置 .isoftstone-swagger-to-ts
 
 - fromurl 服务端 swagger api 地址
 - tourl 本地生成 ts 类型 ts 文件地址，默认为“/api/schemaTypes.ts“
@@ -17,7 +17,7 @@ yarn add swagger-to-ts
 - servicePath Axios 本地实例地址
 
 ```Ï
-在项目根目录创建 .swagger-to-ts 文件并配置如下
+在项目根目录创建 .isoftstone-swagger-to-ts 文件并配置如下
 {
 "fromurl":"http://xxxx/api/",
 "tourl":"/api/schemaTypes.ts",

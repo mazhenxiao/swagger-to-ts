@@ -6,7 +6,7 @@ import rc from 'rc';
 // const tourl = './api/schemaTypes.ts'; // 生成类型文件地址，必须和 toapi 在一个文件夹下
 // const toapi = './api/schemaAPI.ts'; //  生成调用接口文件，和tourl 在一个文件夹下
 // const servicePath = '@/utils/request'; // axios 地址，会被重命名为 service
-const { fromurl, tourl, toapi, servicePath } = rc('swagger-to-ts', {
+const { fromurl, tourl, toapi, servicePath } = rc('isoftstone-swagger-to-ts', {
   fromurl: 'http://172.17.203.130:8081/v3/api-docs',
   tourl: './api/schemaTypes.ts',
   toapi: './api/schemaAPI.ts',
