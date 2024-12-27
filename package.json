@@ -1,7 +1,7 @@
 {
   "name": "swagger-to-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "通过 swagger导出 基于 axios 的ts 请求及 ts 类型",
   "type": "module",
   "main": "schema.js",
   "scripts": {
