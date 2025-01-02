@@ -16,8 +16,7 @@
     "commit": "git add . && git-cz && git push"
   },
   "bin": {
-    "schema": "index.js",
-    "schemaTo": "schema.mjs"
+    "schema": "schema.mjs"
   },
   "author": "mazhenxiao",
   "license": "ISC",
