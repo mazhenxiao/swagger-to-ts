@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import http from 'http';
 import fs from 'fs';
 import path from 'path';
@@ -91,9 +92,18 @@ const createReq = parameters => {
   return txt;
 };
 
+/**
+ * 创建基于Swagger定义的TypeScript类型定义。
+ *
+ * @param {Object} schemas - Swagger文档中的schemas对象。
+ * @returns {string} - 生成的TypeScript类型定义字符串。
+ */
 const createSchema = schemas => {
+  // 初始化类型定义字符串
   let typeString = '';
+  // 遍历schemas对象的每个属性
   Object.entries(schemas).forEach(([key, value]) => {
+    // 如果属性有properties属性，则创建一个Partial类型
     if (value?.properties) {
       typeString += `export type ${key.replace(
         /[«,»]/gi,
@@ -101,11 +111,14 @@ const createSchema = schemas => {
       )} = Partial<{ ${createObj(value.properties)}}>
       `;
     } else {
+      // 如果属性没有properties属性，则创建一个any类型
       typeString += `export type ${key.replace(/[«,»]/gi, '')} = any;
       `;
     }
   });
+  // 打印生成的类型定义字符串
   console.log(typeString);
+  // 返回类型定义字符串
   return typeString;
 };
 // 生成类型
