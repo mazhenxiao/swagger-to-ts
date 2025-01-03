@@ -1,4 +1,4 @@
-# swagger-to-ts
+# isoftstone-swagger-to-ts
 
 通过 swagger 转换出请求和 ts 类型，在根目录下生成 api 文件夹，schemaAP.ts 为请求，schemaType.js 为类型定义。
 
