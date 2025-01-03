@@ -35,3 +35,13 @@ npm run schema  //或者
 
 yarn schema
 ```
+
+### 示例
+
+1. 配置
+
+   ![1735885080892](images/README/1735885080892.png)
+
+2. 命令行及文件输出
+
+   ![1735885697836](images/README/1735885697836.png)
