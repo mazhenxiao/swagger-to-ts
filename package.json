@@ -1,6 +1,6 @@
 {
   "name": "isoftstone-swagger-to-ts",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "通过 swagger导出 基于 axios 的ts 请求及 ts 类型",
   "keywords": [
     "isoftstone",
